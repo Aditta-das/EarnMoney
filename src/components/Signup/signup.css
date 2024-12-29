@@ -1,0 +1,152 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #201b2c;
+    color: white;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+.left-login {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%; /* Align with parent height */
+}
+
+.left-login > h1 {
+    color: #77ffc0;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.left-login-img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+.right-login {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Align with parent height */
+}
+
+.card-login {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.textfield {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 1rem;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > input::placeholder {
+    color: #f0ffff94;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px 0;
+    margin-top: 20px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background: #00d176;
+}
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 768px) {
+    .main-login {
+        flex-direction: column;
+        height: 100vh; /* Ensure it still fits the screen */
+    }
+
+    .left-login > h1 {
+        font-size: 1.8rem;
+    }
+
+    .left-login-img {
+        width: 70%;
+    }
+
+    .card-login {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .left-login > h1 {
+        font-size: 1.5rem;
+    }
+
+    .left-login-img {
+        width: 60%;
+    }
+
+    .btn-login {
+        font-size: 0.9rem;
+    }
+}
